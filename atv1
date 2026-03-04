@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main(){
+    int data1dia;
+    int data1mes;
+    int data1ano;
+    int data2dia;
+    int data2mes;
+    int data2ano;
+    scanf("%d/%d/%d %d/%d/%d", &data1dia, &data1mes, &data1ano, &data2dia, &data2mes, &data2ano);
+    // Amor
+    float amor = (data1dia + data1mes + data1ano + data2dia + data2mes + data2ano) * 7  % 101;
+    printf("Amor:%1.f%%", amor);
+
+    return 0;
+
+    }
