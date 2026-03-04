@@ -11,7 +11,7 @@ int main(){
     // Amor
     float amor = (data1dia + data1mes + data1ano + data2dia + data2mes + data2ano) * 7  % 101;
     printf("Amor:%1.f%%", amor);
-c
+
     return 0;
 
     }
