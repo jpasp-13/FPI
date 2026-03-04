@@ -9,8 +9,8 @@ int main(){
     int data2ano;
     scanf("%d/%d/%d %d/%d/%d", &data1dia, &data1mes, &data1ano, &data2dia, &data2mes, &data2ano);
     // Amor
-    float amor = (data1dia + data1mes + data1ano + data2dia + data2mes + data2ano) * 7  % 101;
-    printf("Amor:%1.f%%", amor);
+    int amor = (data1dia + data1mes + data1ano + data2dia + data2mes + data2ano) * 7  % 101;
+    printf("Amor:%1.d%%", amor);
 
     return 0;
 
