@@ -30,7 +30,7 @@ int main(){
         printf("Amor:%d%% Um dia deslumbrantemente lindo para amar. Ps: Cuidado com a intensidade.", amor);
         return 0;
     }
-    
+    // sorte
     
     
     printf("Amor:%d%%", amor);
