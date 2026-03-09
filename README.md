@@ -3,3 +3,5 @@ Fiquei com dúvidas qnato as restrições, achei que devia verificar se os núme
 
 para a resolução a soma era a parte mais tranquila, pois era só aplicar Gauss, mas eu não sabia como decobrir quantos mutiplos de um número existiam em um intervalo, pesquisando achei uma fómula um pouco complicada e extensa, já pensando em como eu iria monta no código, quando eu vi que se o intervalo começar do 0 era mais simples a fórmula (N / A). Nesse caso sabendo como descobrir a quantidade de mutiplos desse número no intervalo era simples saber quantos ele somavam (aplicava Gauss) e subtraia do valor total.
 O problema é que eu não tinha pensado que subtraindo o valor dos mutiplos de a e dos mutiplos de b eu tiraria a soma dos mutiplos de a e b ao mesmo tempo, nesse caso com o test case 1 dando 7 como resposta quando deveria ser 13 lógicamente 6 a menos, único número mútiplo de 3 e 2 ao mesmo tempo no intervalo até 10.
+
+Finalmente as respostas apareceram, como um test case está sem saída entendi logo que não tinha que fazer o return e sim pedir novamente as entradas.
