@@ -91,7 +91,8 @@ int main(){
                 }
                 else{
                     printf("Nao foi dessa vez que Rebeka pode ajudar...\n");
-                }
+               }
+            }       
     }
 }
      return 0;
