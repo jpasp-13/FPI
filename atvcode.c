@@ -14,13 +14,13 @@ int main(){
         printf("Amor: %d%% Pessimo dia para se apaixonar.\n", amor);
     }
     else if (20 <=amor && amor <= 40){
-        printf("Amor: %d%% Melhor manter o coração <3 longe de perigo.\n",amor);
+        printf("Amor: %d%% Melhor manter o coracao <3 longe de perigo.\n",amor);
     }
     else if (41 <= amor && amor <= 69){
         printf("Amor: %d%% Se o papo e as ideias baterem, esta liberado pensar em algo.\n", amor);
     }
     else if (70 <= amor && amor <= 80){
-        printf("Amor: %d%% Saia com o coração aberto, mas lembre-se, nem toda troca de olhar em onibus e sinal de romance.\n", amor);
+        printf("Amor: %d%% Saia com o coracao aberto, mas lembre, nem toda troca de olhar em onibus e sinal de romance.\n", amor);
     }
     else {
         printf("Amor: %d%% Um dia deslumbrantemente lindo para amar. Ps: Cuidado com a intensidade.\n", amor);
