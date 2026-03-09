@@ -50,6 +50,11 @@ int main(){
             if(((dinheiro * a) % 100 == 0 && (dinheiro * b) % 100 == 0 && (dinheiro * c) % 100 == 0) && (sobra > 2)){
             printf("Cada homem ficou com %d, %d e %d reais, respectivamente\n", (int)valora, (int)valorb, (int)valorc);
             dinheiroRebeka += sobra;
+            char X, Y, Z;
+            scanf(" %c %c %c", &X, &Y, &Z);
+            int soma = (X - 'a' + 1) + (Y - 'a' + 1) + (Z - 'a' + 1);
+            printf("%d\n", soma);
+
             if (dinheiroRebeka >= 7){
                 printf("Ela conseguiu! Rebeka voltou para casa e apanhou da mae por sumir noite passada!\n");
             }
