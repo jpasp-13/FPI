@@ -76,9 +76,24 @@ int main(){
                     int id1, id2, id3;
                     scanf(" %d %d %d", &id1, &id2, &id3);
                     if (id1 % 3 == 0 || id2 % 3 == 0 || id3 % 3 == 0){
-                        id1 /= 3;
-                        id2 /= 3;
-                        id3 /= 3;
+                        if(id1 % 3 == 0){ 
+                            id1/= 3;
+                        }
+                        else{
+                            id1 = 0;
+                        }
+                        if(id2 % 3 == 0){
+                            id2 /= 3;
+                        }
+                        else{
+                            id2 = 0;
+                        }
+                        if(id3 % 3 == 0){
+                            id3 /= 3;
+                        }
+                        else{
+                            id3 = 0;
+                        }
                         int parcelas = (id1 + id2 + id3);
                         printf("%d\n", parcelas);
                     }
@@ -91,6 +106,15 @@ int main(){
                 }
                 else{
                     printf("Nao foi dessa vez que Rebeka pode ajudar...\n");
+                    if(dinheiroRebeka >= 7){
+                        printf("Ela conseguiu! Rebeka voltou para casa e apanhou da mae por sumir noite passada!\n");                        
+                    }
+                    else{
+                        printf("E parece que Rebeka vai ter que voltar andando...\n");                        
+                    }
+
+
+                    
                }
             }       
     }
