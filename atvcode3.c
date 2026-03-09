@@ -70,7 +70,7 @@ int main(){
                 valorb = dinheiro * (b/100.0);
                 valorc = dinheiro * (c/100.0);
                 sobra = dinheiro - (valora + valorb + valorc);
-                if(((dinheiro * a) % 100 == 0 && (dinheiro * b) % 100 == 0 && (dinheiro * c) % 100 == 0) && (sobra > 2)){
+                if(((dinheiro * a) % 100 == 0 && (dinheiro * b) % 100 == 0 && (dinheiro * c) % 100 == 0) && (sobra > 3)){
                     printf("Cada homem ficou com %d, %d e %d reais, respectivamente\n", (int)valora, (int)valorb, (int)valorc);
                     dinheiroRebeka += sobra;
                     int id1, id2, id3;
@@ -80,7 +80,7 @@ int main(){
                         id2 /= 3;
                         id3 /= 3;
                         int parcelas = (id1 + id2 + id3);
-                        printf("%d", parcelas);
+                        printf("%d\n", parcelas);
                     }
                     if (dinheiroRebeka >= 7){
                         printf("Ela conseguiu! Rebeka voltou para casa e apanhou da mae por sumir noite passada!\n");
