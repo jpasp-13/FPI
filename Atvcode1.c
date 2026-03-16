@@ -14,10 +14,10 @@ int main(){
             }
         }
 
-        printf("%c", i);
+
         
-        if(i > 'A' && i <= letra){
-            for(char v = 'A'; v < i; v++){
+        if(i >= 'A' && i <= letra){
+            for(char v = i; v >= 'A'; --v){
                 printf("%c", v);
             }
         }       
