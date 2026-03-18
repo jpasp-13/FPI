@@ -7,6 +7,7 @@ int main(){
     int x;
     int primeiro = 0;
     int q = 0;
+    int u = 0;
     for(int x = n; x <= k; x++){
         f = x;
         primos = 0;
@@ -16,19 +17,34 @@ int main(){
             f /= 2;
         }
     }
+    if(p == 0 && f == 1){
+        q += 1;
+        if(primeiro == 0){
+            primeiro = x;
+            q -= 1;
+        }
+    }
 
         for(int id = 3; id <= f && f != 1; id += 2){
             if(f % id == 0){
-            f /= id;
-            if(f % id != 0){
-                primos += 1;
-                if(primos == p){
+                u = 0;
+                while(f % id == 0){
+                    f /= id;
+                    u += 1;        
+                }
+                if(u == 1){
+                    primos += 1;
+                }
+                else{
+                    primos = 101;
+                    f = 1;
+                }
+                if(primos == p && f == 1){
                     q += 1;
                 if (primeiro == 0){
                     primeiro = x;
                     q -=1;
                 }
-            }
             } 
             
         }
@@ -37,7 +53,7 @@ int main(){
     } 
 
     if(primeiro == 0){
-        printf("Poxa dudinha, me desculpe, não achei os números mas vou te mandar uma foto de um gatinho fofo.");
+        printf("Poxa dudinha, me desculpa, nao achei os numeros mas vou te mandar uma foto de um gatinho fofo.");
     }
     else{
         printf("%d", primeiro);
